@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Radio player</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="record">
+        <div class="label"></div>
+      </div>
+      <div class="stick">
+        <div class="screw"></div>
+      </div>
+      <button class="btn-control" title="Play/pause the radio"></button>
+      <div class="slidecontainer">
+        <input type="range" class="slider" min="0" max="1" step="0.1" value="0.7" />
+      </div>
+    </div>
+
+    <audio autoplay id="audio">
+      <source src="https://online.kissfm.ua/KissFM_HD" type="audio/mpeg" />
+    </audio>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

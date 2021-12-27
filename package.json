@@ -1,0 +1,23 @@
+{
+  "name": "online-radio-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build-ts-watch": "tsc --watch",
+    "build-scss-watch": "sass --watch src/scss:build/styles",
+    "build-ts": "tsc",
+    "build-scss": "sass src/scss:build/styles",
+    "start": "npm-run-all --parallel build-ts-watch build-scss-watch",
+    "build": "build-ts && build-scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.1",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
