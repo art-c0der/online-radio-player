@@ -1,6 +1,11 @@
 const player = document.querySelector('.player');
+const loader = document.querySelector('.loader');
+
 const volumeSlider = document.querySelector('.slider') as HTMLInputElement;
-const controlButton = document.querySelector('.btn-control') as HTMLButtonElement;
+
+const buttonRecord = document.querySelector('.btn-record') as HTMLButtonElement;
+const buttonStick = document.querySelector('.btn-stick') as HTMLButtonElement;
+
 const audio = document.querySelector('#audio') as HTMLAudioElement;
 
 const handleTogglePlayer = () => {
@@ -21,10 +26,12 @@ const changePlayerVolume = () => {
 };
 
 const init = () => {
-  player.classList.add('on');
-
-  controlButton.addEventListener('click', handleTogglePlayer);
-  volumeSlider.addEventListener('input', changePlayerVolume);
+  loader.classList.add('hidden');
+  player.classList.remove('hidden');
 };
 
 audio.addEventListener('canplay', init);
+
+buttonRecord.addEventListener('click', handleTogglePlayer);
+buttonStick.addEventListener('click', handleTogglePlayer);
+volumeSlider.addEventListener('input', changePlayerVolume);

@@ -11,21 +11,23 @@
     <link rel="stylesheet" href="./build/styles/style.css" />
     <title>Radio player</title>
   </head>
+
   <body>
-    <div class="player">
-      <div class="record">
+    <p class="loader">Loading...</p>
+    <div class="player hidden">
+      <button class="record btn-record">
         <div class="label"></div>
-      </div>
-      <div class="stick">
+      </button>
+      <button class="stick btn-stick">
         <div class="screw"></div>
-      </div>
-      <button class="btn-control" title="Play/pause the radio"></button>
+      </button>
+      <button class="control-indicator" title="Play/pause the radio"></button>
       <div class="slidecontainer">
         <input type="range" class="slider" min="0" max="1" step="0.1" value="0.7" />
       </div>
     </div>
 
-    <audio autoplay id="audio">
+    <audio id="audio">
       <source src="https://online.kissfm.ua/KissFM_HD" type="audio/mpeg" />
     </audio>
 

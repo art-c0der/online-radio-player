@@ -26,15 +26,18 @@ body {
 }
 
 .player {
-  background-color: #d52f31;
+  background-color: #d5b72f;
   width: 330px;
   height: 190px;
   border-radius: 5px;
-  box-shadow: 0 8px 0 0 #be272a;
+  box-shadow: 0 8px 0 0 rgba(213, 183, 47, 0.5);
   position: relative;
 }
 
 .record {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
   height: 175px;
   width: 175px;
   background-color: #181312;
@@ -78,6 +81,9 @@ body {
 }
 
 .stick {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
   height: 90px;
   width: 6px;
   background-color: #ffffff;
@@ -125,7 +131,7 @@ body {
   left: -16px;
 }
 
-.btn-control {
+.control-indicator {
   height: 28px;
   width: 28px;
   background-color: #ed5650;
@@ -137,10 +143,9 @@ body {
   border: 3.5px solid #be272a;
   animation-play-state: paused;
   outline: none;
-  cursor: pointer;
   transition: opacity 0.25s ease-in-out;
 }
-.on .btn-control {
+.on .control-indicator {
   background-color: #1bb91b;
   border-color: #097509;
   animation: blinking 2s linear infinite;
@@ -151,8 +156,8 @@ body {
   width: 90px;
   height: 7px;
   -webkit-appearance: none;
-  background-color: #be272a;
-  border: 6px solid #ed5650;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 6px solid rgba(255, 255, 255, 0.4);
   border-radius: 3px;
   outline: none;
   position: absolute;
@@ -165,6 +170,17 @@ body {
   width: 10px;
   height: 12px;
   cursor: pointer;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  animation: blinking 1.5s linear infinite;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

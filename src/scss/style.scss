@@ -21,6 +21,9 @@ body {
 }
 
 .record {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
   height: 175px;
   width: 175px;
   background-color: $dark;
@@ -68,6 +71,9 @@ body {
 }
 
 .stick {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
   height: 90px;
   width: 6px;
   background-color: $white;
@@ -119,7 +125,7 @@ body {
   }
 }
 
-.btn-control {
+.control-indicator {
   height: 28px;
   width: 28px;
   background-color: $light-red;
@@ -131,7 +137,6 @@ body {
   border: 3.5px solid $reddish;
   animation-play-state: paused;
   outline: none;
-  cursor: pointer;
   transition: opacity 0.25s ease-in-out;
 
   .on & {
@@ -161,4 +166,15 @@ body {
     height: 12px;
     cursor: pointer;
   }
+}
+
+.loader {
+  color: $white;
+  font-size: 20px;
+  text-transform: uppercase;
+  animation: blinking 1.5s linear infinite;
+}
+
+.hidden {
+  display: none;
 }
