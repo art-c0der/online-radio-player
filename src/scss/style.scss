@@ -12,11 +12,11 @@ body {
   align-items: center;
 }
 .player {
-  background-color: $red;
+  background-color: $yellow;
   width: 330px;
   height: 190px;
   border-radius: 5px;
-  box-shadow: 0 8px 0 0 $reddish;
+  box-shadow: 0 8px 0 0 $yellow_50;
   position: relative;
 }
 
@@ -146,8 +146,8 @@ body {
   width: 90px;
   height: 7px;
   -webkit-appearance: none;
-  background-color: $reddish;
-  border: 6px solid $light-red;
+  background-color: $black_70;
+  border: 6px solid $white_40;
   border-radius: 3px;
   outline: none;
   position: absolute;
