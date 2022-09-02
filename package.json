@@ -9,7 +9,7 @@
     "build-ts": "tsc",
     "build-scss": "sass src/scss:build/styles",
     "start": "npm-run-all --parallel build-ts-watch build-scss-watch",
-    "build": "build-ts && build-scss"
+    "build": "npm run build-ts && npm run build-scss"
   },
   "author": "",
   "license": "ISC",

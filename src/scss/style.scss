@@ -2,7 +2,7 @@
 @import './_animations.scss';
 
 body {
-  background-color: #343434;
+  background-color: $main_bg_color;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -12,11 +12,11 @@ body {
   align-items: center;
 }
 .player {
-  background-color: $yellow;
+  background-color: $radio_main_color;
   width: 330px;
   height: 190px;
   border-radius: 5px;
-  box-shadow: 0 8px 0 0 $yellow_50;
+  box-shadow: 5px 4px 0px 5px $radio_bottom_line_color;
   position: relative;
 }
 
@@ -128,21 +128,20 @@ body {
 .control-indicator {
   height: 28px;
   width: 28px;
-  background-color: $light-red;
+  background-color: $power_off_border_color;
   border-radius: 50%;
   position: absolute;
   bottom: 20px;
   right: 30px;
   border: none;
-  border: 3.5px solid $reddish;
+  border: 3.5px solid $power_off_color;
   animation-play-state: paused;
   outline: none;
   transition: opacity 0.25s ease-in-out;
 
   .on & {
-    background-color: $light-green;
-    border-color: $green;
-    animation: blinking 2s linear infinite;
+    background-color: $power_on_color;
+    animation: blinking 2s ease-in-out infinite;
   }
 }
 
@@ -169,10 +168,9 @@ body {
 }
 
 .loader {
-  color: $white;
-  font-size: 20px;
-  text-transform: uppercase;
-  animation: blinking 1.5s linear infinite;
+  background-image: url('/img/music-loader.svg');
+  width: 200px;
+  height: 200px;
 }
 
 .hidden {

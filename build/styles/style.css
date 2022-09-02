@@ -15,7 +15,7 @@
   }
 }
 body {
-  background-color: #343434;
+  background-color: #1b1b2f;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -26,11 +26,11 @@ body {
 }
 
 .player {
-  background-color: #d5b72f;
+  background-color: #f22077;
   width: 330px;
   height: 190px;
   border-radius: 5px;
-  box-shadow: 0 8px 0 0 rgba(213, 183, 47, 0.5);
+  box-shadow: 5px 4px 0px 5px #7360a0;
   position: relative;
 }
 
@@ -76,7 +76,7 @@ body {
   background-color: #181312;
   height: 15px;
   width: 15px;
-  border: 20px solid #ff8e00;
+  border: 20px solid #f98b00;
   border-radius: 50%;
 }
 
@@ -134,21 +134,20 @@ body {
 .control-indicator {
   height: 28px;
   width: 28px;
-  background-color: #ed5650;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   position: absolute;
   bottom: 20px;
   right: 30px;
   border: none;
-  border: 3.5px solid #be272a;
+  border: 3.5px solid #b21c44;
   animation-play-state: paused;
   outline: none;
   transition: opacity 0.25s ease-in-out;
 }
 .on .control-indicator {
-  background-color: #1bb91b;
-  border-color: #097509;
-  animation: blinking 2s linear infinite;
+  background-color: #eeb01b;
+  animation: blinking 2s ease-in-out infinite;
 }
 
 .slider {
@@ -173,10 +172,9 @@ body {
 }
 
 .loader {
-  color: #ffffff;
-  font-size: 20px;
-  text-transform: uppercase;
-  animation: blinking 1.5s linear infinite;
+  background-image: url("/img/music-loader.svg");
+  width: 200px;
+  height: 200px;
 }
 
 .hidden {

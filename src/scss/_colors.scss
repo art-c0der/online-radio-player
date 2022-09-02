@@ -1,18 +1,18 @@
-$yellow: #d5b72f;
-$yellow_50: rgb(213 183 47 / 50%);
-
-$orange: #ff8e00;
-
-$red: #d52f31;
-$reddish: #be272a;
-$light-red: #ed5650;
-
-$light-green: #1bb91b;
-$green: #097509;
-
 $white: #ffffff;
-$white_40: rgb(255 255 255 / 40%);
+$white_40: rgba(255, 255, 255, 0.4);
 
 $dark: #181312;
 $dark-brown: #2c2424;
 $black_70: rgb(0 0 0 / 70%);
+
+$orange: #f98b00;
+
+$main_bg_color: #1b1b2f;
+
+$radio_main_color: #f22077;
+$radio_bottom_line_color: #7360a0;
+
+$power_off_color: #b21c44;
+$power_off_border_color: $white_40;
+
+$power_on_color: #eeb01b;
