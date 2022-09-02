@@ -172,7 +172,7 @@ body {
 }
 
 .loader {
-  background-image: url("/img/music-loader.svg");
+  background-image: url("../../img/music-loader.svg");
   width: 200px;
   height: 200px;
 }
