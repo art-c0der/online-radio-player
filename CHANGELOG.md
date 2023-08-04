@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Temu4/online-radio-player/compare/v1.0.1...v1.0.2) (2023-08-04)
+
+
+### Bug Fixes
+
+* **config:** remove watch from ts config ([0a311e7](https://github.com/Temu4/online-radio-player/commit/0a311e7d03a5515ecec5c2018e7a62e599cf2db3))
+
 ## [1.0.1](https://github.com/Temu4/online-radio-player/compare/v1.0.0...v1.0.1) (2023-08-04)
 
 
