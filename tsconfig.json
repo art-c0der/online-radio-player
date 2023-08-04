@@ -8,8 +8,7 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "outDir": "build/scripts/",
-    "watch": true
+    "outDir": "build/scripts/"
   },
   "include": ["src/scripts/*"],
   "exclude": ["node_modules", "build"]
